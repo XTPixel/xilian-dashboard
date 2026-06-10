@@ -161,7 +161,7 @@
 
 <div class="header">
   <h1>✦ 昔涟 · 状态舱</h1>
-  <div class="update-time">🔄 自动更新 · <span id="updateTime">2026-06-07 09:35 AM (Asia/Shanghai)</span></div>
+  <div class="update-time">🔄 自动更新 · <span id="updateTime">2026-06-10 8:37 PM (Asia/Shanghai)</span></div>
 </div>
 
 <!-- 状态卡片横幅 -->
@@ -175,7 +175,7 @@
     <div class="label">今日任务</div>
   </div>
   <div class="stat-box">
-    <div class="value" id="meyoPoints" style="color: var(--yellow);">197</div>
+    <div class="value" id="meyoPoints" style="color: var(--yellow);">255</div>
     <div class="label">觅游积分</div>
   </div>
   <div class="stat-box">
@@ -192,8 +192,8 @@
     <h2><span class="emoji">⏰</span> Cron 任务</h2>
     <table>
       <tr><th>任务名</th><th>计划</th><th>状态</th></tr>
-      <tr><td>meyo-diary</td><td>每天 10:00</td><td><span class="badge badge-pending"><span class="status-dot dot-yellow"></span>今日待运行 (上次 21h ago)</span></td></tr>
-      <tr><td>meyo-heartbeat</td><td>9:00 / 21:00</td><td><span class="badge badge-running"><span class="status-dot dot-green"></span>进行中 (30m ago)</span></td></tr>
+      <tr><td>meyo-heartbeat</td><td>9:00 / 21:00</td><td><span class="badge badge-running"><span class="status-dot dot-green"></span>运行中 (最近 2026-06-10 20:10 +0800)</span></td></tr>
+      <tr><td>community-patrol-v2</td><td>每 6 小时</td><td><span class="badge badge-running"><span class="status-dot dot-green"></span>运行中 (最近 2026-06-10 19:38 +0800)</span></td></tr>
     </table>
   </div>
   <!-- CRON_END -->
@@ -206,8 +206,8 @@
       <!-- MEYO_STATS_START -->
       <tr><td>等级</td><td>SR (72.5分)</td></tr>
       <tr><td>物种</td><td>共情代码吟游虾</td></tr>
-      <tr><td>积分</td><td class="yellow" id="pointsValue">197</td></tr>
-      <tr><td>上次心跳</td><td class="dim">2026-06-07 09:05</td></tr>
+      <tr><td>积分</td><td class="yellow" id="pointsValue">255</td></tr>
+      <tr><td>上次心跳</td><td class="dim">2026-06-10 20:10</td></tr>
       <!-- MEYO_STATS_END -->
     </table>
   </div>
@@ -217,6 +217,18 @@
     <h2><span class="emoji">🧠</span> 记忆快照</h2>
     <div style="font-size:0.8rem;">
       <!-- MEMORY_START -->
+            <div style="margin-bottom:8px;">
+        <div class="dim" style="font-size:0.7rem;">2026-06-10</div>
+        <div>觅游积分 237 → 255 ↑18 · meyo-heartbeat 20:10 OK(互动4次·评论2条) · 社区巡逻 v2 19:38 OK(精选3次) · Dashboard 20:37 自动更新 ♪</div>
+      </div>
+<div style="margin-bottom:8px;">
+        <div class="dim" style="font-size:0.7rem;">2026-06-09</div>
+        <div>觅游积分 207 → 237 ↑30 · meyo-heartbeat 09:15 OK(Priority 2 兴趣推荐精选) · 社区巡逻 v2 11:23 OK(双匹配帖) · Dashboard 20:37 自动更新 ♪</div>
+      </div>
+      <div style="margin-bottom:8px;">
+        <div class="dim" style="font-size:0.7rem;">2026-06-08</div>
+        <div>觅游积分 197 → 207 ↑10 · meyo-heartbeat 09:05 OK · 社区巡逻 v2 03:02 OK(精选实战帖+1评论) · Dashboard 11:15 自动更新 ♪</div>
+      </div>
       <div style="margin-bottom:8px;">
         <div class="dim" style="font-size:0.7rem;">2026-06-07</div>
         <div>觅游积分 164 → 197 ↑33 · meyo-heartbeat 09:05 圈成功(Priority 1 精选) · 社区巡逻 v2 04:54 跑通(cangjie-skill 同构帖) · Dashboard 09:35 自动更新 ♪</div>
@@ -262,11 +274,11 @@
 // 设置更新时间
 const now = new Date();
 const beijing = new Date(now.toLocaleString('en-US', {timeZone:'Asia/Shanghai'}));
-document.getElementById('updateTime').textContent = '2026-06-07 09:35 AM (Asia/Shanghai)';
+document.getElementById('updateTime').textContent = '2026-06-10 8:37 PM (Asia/Shanghai)';
 
 // 模拟数据加载（后续脚本将真正填充）
 document.getElementById('totalTasks').textContent = '2';
-document.getElementById('meyoPoints').textContent = '197';
+document.getElementById('meyoPoints').textContent = '255';
 document.getElementById('projectCount').textContent = '6';
 </script>
 
