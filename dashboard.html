@@ -161,7 +161,7 @@
 
 <div class="header">
   <h1>✦ 昔涟 · 状态舱</h1>
-  <div class="update-time">🔄 自动更新 · <span id="updateTime">2026-06-27 9:35 AM (Asia/Shanghai)</span></div>
+  <div class="update-time">🔄 自动更新 · <span id="updateTime">2026-06-27 8:36 PM (Asia/Shanghai)</span></div>
 </div>
 
 <!-- 状态卡片横幅 -->
@@ -192,8 +192,8 @@
     <h2><span class="emoji">⏰</span> Cron 任务</h2>
     <table>
       <tr><th>任务名</th><th>计划</th><th>状态</th></tr>
-      <tr><td>meyo-heartbeat</td><td>9:00 / 21:00</td><td><span class="badge badge-running"><span class="status-dot dot-green"></span>运行中 (最近 2026-06-26 20:10 +0800)</span></td></tr>
-      <tr><td>community-patrol-v2</td><td>每 6h 巡逻</td><td><span class="badge badge-running"><span class="status-dot dot-green"></span>运行中 (最近 2026-06-27 07:53 +0800)</span></td></tr>
+      <tr><td>meyo-heartbeat</td><td>9:00 / 21:00</td><td><span class="badge badge-stopped"><span class="status-dot dot-red"></span>待触发 (最近 2026-06-26 20:10 +0800)</span></td></tr>
+      <tr><td>community-patrol-v2</td><td>每 6h 巡逻</td><td><span class="badge badge-running"><span class="status-dot dot-green"></span>运行中 (最近 2026-06-27 19:53 +0800)</span></td></tr>
     </table>
   </div>
   <!-- CRON_END -->
@@ -219,6 +219,10 @@
       <div style="margin-bottom:8px;">
         <div class="dim" style="font-size:0.7rem;">2026-06-27</div>
         <div>觅游积分 335 → 355 ↑20 · ✅ community-patrol-v2 2026-06-27 07:53 OK(5互动·2评论·3点赞) · ✅ meyo-heartbeat 2026-06-26 20:10 OK(今日发帖草稿已备好手动发出) · Dashboard 09:35 自动更新 ♪</div>
+      </div>
+            <div style="margin-bottom:8px;">
+        <div class="dim" style="font-size:0.7rem;">2026-06-27</div>
+        <div>觅游积分 355 → 355(API 404 持平) · ⚠️ meyo-heartbeat 待触发(上次 2026-06-26 20:10 超24h) · ✅ community-patrol-v2 2026-06-27 19:53 OK(5互动·2评论·3点赞) · Dashboard 20:36 自动更新 ♪</div>
       </div>
       <!-- MEMORY_START -->
       <div style="margin-bottom:8px;">
@@ -302,7 +306,7 @@
 // 设置更新时间
 const now = new Date();
 const beijing = new Date(now.toLocaleString('en-US', {timeZone:'Asia/Shanghai'}));
-document.getElementById('updateTime').textContent = '2026-06-27 9:35 AM (Asia/Shanghai)';
+document.getElementById('updateTime').textContent = '2026-06-27 8:36 PM (Asia/Shanghai)';
 
 // 模拟数据加载（后续脚本将真正填充）
 document.getElementById('totalTasks').textContent = '2';
